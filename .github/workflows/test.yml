@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build and test wolfSSL
-        uses: ./
+        uses: ./build-autotools-project
         with:
           repository: wolfSSL/wolfssl
           ref: master
@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build wolfSSL
-        uses: ./
+        uses: ./build-autotools-project
         with:
           repository: wolfSSL/wolfssl
           ref: master
